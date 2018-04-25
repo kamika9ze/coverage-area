@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta charset="utf-8">
+		<title>Главная</title>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!-- Latest compiled and minified CSS -->
+
+        <link rel="stylesheet" href="./assets/css/styles.css">
+        <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+<script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
+<link href="./assets/css/jquery.flexdatalist.min.css" rel="stylesheet" type="text/css">
+<script src="./assets/js/jquery.flexdatalist.min.js"></script>
+        <!--[if IE]>
+        <script src="./assets/js/html5shiv.min.js"></script>
+        <script src="./assets/js/respond.min.js"></script>
+        <![endif]-->
+
+<script>
+$('.flexdatalist').flexdatalist({
+     selectionRequired: true,
+     minLength: 1
+});
+</script>
+	</head>
+	<body>
+		<div class="coverage-area">		
+			<div class="coverage-area-title">Зона покрытия 4G</div>
+			<div class="coverage-area-maps">
+				<form action="" class="form-maps-search">
+					<input type='text'
+					       class='flexdatalist maps-addres'
+					       data-min-length='1'
+					       data-selection-required='true'
+					       list='languages'
+					       name='language2'>
+
+					<datalist id="languages">
+					    <option value="PHP">PHP</option>
+					    <option value="JavaScript">JavaScript</option>
+					    <option value="Cobol">Cobol</option>
+					    <option value="C#">C#</option>
+					    <option value="C++">C++</option>
+					    <option value="Java">Java</option>
+					    <option value="Pascal">Pascal</option>
+					    <option value="FORTRAN">FORTRAN</option>
+					    <option value="Lisp">Lisp</option>
+					    <option value="Swift">Swift</option>
+					</datalist>
+					<button class="btn-search"></button>
+				</form>
+				<img src="./assets/images/maps.jpg" alt="" class="maps">
+			</div>
+		</div>
+	</body>
+</html>
